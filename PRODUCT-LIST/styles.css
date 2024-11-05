@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "RedHatTextRegular";
+    src: url("assets/fonts/static/RedHatText-Regular.ttf");
+}
+@font-face {
+    font-family: "RedHatTextBold";
+    src: url("assets/fonts/static/RedHatText-Bold.ttf");
+}
+@font-face {
+    font-family: "RedHatTextSemiBold";
+    src: url("assets/fonts/static/RedHatText-SemiBold.ttf");
+}
+
+body {
+    background-color: #F0F0F2;
+}
+.central-box {
+    background-color: hsl(13, 31%, 94%);
+    box-shadow: 0px 10px 20px rgb(128,128,128);
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 10em 3em 10em;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 70px;
+    border-radius: 2px;
+    height: 100%;
+    font-family: "RedHatTextSemiBold";
+    font-size: 13px;
+}
+
+h1 {
+    margin: 0;
+    font-family: "RedHatTextBold";
+    font-size: 30px;
+}
+
+.container-product {
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+}
+
+.container-cart {
+    background-color: white;
+    width: 30%;
+    height: fit-content;
+    border-radius: 7px;
+    padding: 10px 10px 10px 10px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 7px;
+}
+
+.cart-button {
+    position: absolute;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 10px 20px;
+    top: 180px;
+    left: 50px;
+}
+
+p {
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+.titre-produit {
+    font-family: "RedHatTextRegular";
+    font-size: 12px;
+    color: gray;
+}
+
+.price {
+    color: #CB5123;
+}
+
+h2 {
+    color: #CB5123;
+    font-size: 18px;
+    font-family: "RedHatTextBold";
+}
