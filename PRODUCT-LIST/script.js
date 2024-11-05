@@ -13,6 +13,7 @@ cartButton.forEach(cartButton => {
         if (cartContentNormal) {
             cartContentHover.style.display = "flex";
             cartContentNormal.style.display = "none";
+            cartButton.previousElementSibling.classList.add("hover");
         } 
     })
 
@@ -21,6 +22,7 @@ cartButton.forEach(cartButton => {
             cartButton.classList.add("hover");
             cartContentHover.style.display = "flex";
         } else {
+            cartButton.previousElementSibling.classList.remove("hover");
             cartButton.classList.remove("hover");
             cartContentHover.style.display = "none";
             cartContentNormal.style.display= "flex";
