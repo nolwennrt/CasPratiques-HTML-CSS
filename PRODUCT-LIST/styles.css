@@ -1,14 +1,14 @@
 @font-face {
     font-family: "RedHatTextRegular";
-    src: url("assets/fonts/static/RedHatText-Regular.ttf");
+    src: url("ressources/fonts/static/RedHatText-Regular.ttf");
 }
 @font-face {
     font-family: "RedHatTextBold";
-    src: url("assets/fonts/static/RedHatText-Bold.ttf");
+    src: url("ressources/fonts/static/RedHatText-Bold.ttf");
 }
 @font-face {
     font-family: "RedHatTextSemiBold";
-    src: url("assets/fonts/static/RedHatText-SemiBold.ttf");
+    src: url("ressources/fonts/static/RedHatText-SemiBold.ttf");
 }
 
 body {
@@ -69,14 +69,55 @@ img {
     background-color: white;
     border: 1px solid gray;
     border-radius: 50px;
-    width: fit-content;
-    padding: 10px 20px;
-    top: 180px;
-    left: 50px;
+    width: 90px;
+    height: 20px;
+    padding: 5px 20px;
+    top: 182px;
+    left: 38px;
+    cursor: pointer;
+}
+
+.cart-button.hover {
+    background-color: #CB5123;
+    border: none;
+    color: white;
+}
+
+.cart-button:hover {
+    background-color: #CB5123;
+    border: none;
+    color: white;
+}
+
+.cart-content-normal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.cart-content-hover {
+    display: none;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.increase, .decrease {
+    width: 7px;
+    height: 7px;
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 999px;
+}
+
+.quantity {
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 p {
-    margin-top: 30px;
+    margin-top: 20px;
     line-height: 1.6;
 }
 
@@ -94,4 +135,10 @@ h2 {
     color: #CB5123;
     font-size: 18px;
     font-family: "RedHatTextBold";
+}
+
+.addtocart {
+    width: auto;
+    height: auto;
+    margin-right: 5px;
 }
