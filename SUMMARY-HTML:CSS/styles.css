@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "HankenGroteskBold" ;
+    src: url(ressources/static/HankenGrotesk-Bold.ttf);
+}
+@font-face {
+    font-family: "HankenGroteskExtra" ;
+    src: url(ressources/static/HankenGrotesk-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "HankenGroteskMedium" ;
+    src: url(ressources/static/HankenGrotesk-Medium.ttf);
+}
+
+/* GLOBAL STYLE */
+
+
+body {
+    background-color: whitesmoke;
+}
+
+h2 {
+    margin-top: 10px;
+    font-family: "HankenGroteskBold";
+    font-size: 25px;
+}
+
+p {
+    font-family: "HankenGroteskMedium" ;
+    font-size: 16px;
+}
+
+/* CARD STYLE */
+
+.card {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.result-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.result-part h2 {
+    color: hsla(241, 100%, 89%, 0.9);
+}
+
+.result-part p {
+    color: hsla(241, 100%, 89%, 0.9) ;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border-radius: 999px;
+    margin: 15px 0 20px 0;
+}
+
+.score-container p {
+    font-size: 18px;
+    color: hsla(241, 100%, 89%, 0.5) ;
+    line-height: 1.1;
+}
+
+.score-container span {
+    color: hsl(0, 0%, 100%) ;
+    font-family: "HankenGroteskExtra" ;
+    font-size: 70px;
+}
+
+.result-part .bold {
+    font-size: 28px;
+    color: hsl(0, 0%, 100%);
+    margin: 20px 0 0 0;
+
+}
+
+/* SUMMARY STYLE */
+
+.summary-part {
+    width: 50%;
+    padding: 30px;
+}
+
+.summary-part h2 {
+    color: hsl(224, 30%, 27%);
+}
+
+/* STYLE COMMUN A TOUTE LES CATEGORIE */
+
+.subject {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+.subject img {
+    margin-right: 10px;
+}
+
+.subject .score {
+    color: hsla(224, 30%, 27%, 0.7);
+}
+
+.subject .score span {
+    font-family: "HankenGroteskBold" ;
+    color: hsl(224, 30%, 27%)
+}
+
+.category {
+    flex-grow: 1;
+}
+
+/* STYLE PARTICULIER */
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    border-radius: 10px;
+}
+
+.reaction .category {
+    color: hsl(0, 100%, 67%);
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.1);
+    border-radius: 10px;
+}
+
+.memory .category {
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    border-radius: 10px;
+}
+
+.verbal .category {
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    border-radius: 10px;
+}
+
+.visual .category {
+    color: hsl(234, 85%, 45%);
+}
+
+/* STYLE BOUTON */
+
+button {
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    color: white;
+    font-family: "HankenGroteskMedium" ;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    margin-top: 30px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-image: linear-gradient(hsl(252, 55%, 53%),hsl(241, 70%, 40%));
+}
+
+
+.attribution {
+    position: absolute;  
+    bottom: 0;          
+    left: 50%;          
+    transform: translateX(-50%);  
+    margin-bottom: 20px;
+}
+
+
+
