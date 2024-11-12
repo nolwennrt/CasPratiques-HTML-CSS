@@ -14,6 +14,7 @@ body {
     font-size: 16px;
     color: hsl(30, 10%, 34%);
     background-color: hsl(30, 67%, 88%);
+    box-sizing: border-box;
 }
 
 main {
@@ -34,6 +35,7 @@ h1 {
     color: hsl(24, 5%, 18%) ;
     font-size: 40px;
     font-weight: 400;
+    margin-bottom: 5px;
 }
 
 h2 {
@@ -53,19 +55,24 @@ h3 {
     background-color: hsl(330, 100%, 98%);
     padding: 20px;
     border-radius: 10px;
+    margin-top: 26px;
 }
 
 ul , ol {
     padding-left: 20px;
 }
 
+/* Ajout de l'espacement entre les puces et le texte */
+
 li {
     padding-left: 20px;
 }
 
 li:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Ajout de l'espacement entre les éléments de la liste */
 }
+
+/* Modification des puces avec le pseudo élément ::marker */
 
 li::marker {
     color: hsl(14, 45%, 36%) ;
@@ -73,7 +80,7 @@ li::marker {
 }
 
 ul li::marker {
-    font-size: 15px;
+    font-size: 15px; /* Modification des puces des ul */
 }
 
 .preparation-time li::marker {
@@ -89,12 +96,14 @@ hr {
     border: solid 0.5px hsl(30, 18%, 87%);
 }
 
+/* Style du tableau */
+
 table {
     width: 100%;
 }
 
 tr:not(:last-child) td {
-    border-bottom: solid 1px hsl(30, 18%, 87%);
+    border-bottom: solid 1px hsl(30, 18%, 87%); /* Ajout de la ligne inférieur sauf pour les dernière liste du tableau, "tout les td de tout les tr sauf les td du dernier tr" */
 }
 
 td {
@@ -108,4 +117,28 @@ tr .bold {
 footer {
     text-align: center;
     padding-bottom: 20px;
+}
+
+/* Ajout du responsive */
+
+@media screen and (max-width: 940px) {
+    body {
+        margin: 0;
+    }
+    main {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        padding: 0px;
+    }
+    main img {
+        border-radius: 0;
+    }
+    .recipe-content {
+        padding: 40px;
+        padding-top: 0px;
+    }
+    footer {
+        display: none;
+    }
 }
