@@ -1,1 +1,1 @@
-To visit Website : https://nolwennrt.github.io/CasPratiques-HTML-CSS/Recipe-HTML-CSS
+To visit website : https://nolwennrt.github.io/CasPratiques-HTML-CSS/Recipe-HTML-CSS/
