@@ -1,1 +1,0 @@
-To visit website : https://nolwennrt.github.io/Perso-CasPratiques/PRODUCT-LIST-HTML:CSS:JS/
