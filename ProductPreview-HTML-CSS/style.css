@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Montserrat" ;
+    src: url(assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url(assets/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+/* Text Style */
+
+h1 {
+    font-family: "Fraunces", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-wrap: balance;
+    line-height: 30px;
+    color: hsl(212, 21%, 14%);
+}
+
+h2 {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+}
+
+p {
+    font-family: "Montserrat", sans-serif ;
+    font-size: 14px ;
+    line-height: 20px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+
+/* Hero style */
+
+.hero {
+    margin: 150px auto;
+    background-color: white;
+    width: 600px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.hero-image {
+    background-image: url("assets/images/image-product-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+}
+
+.hero-content {
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.price {
+    display: flex;
+    margin: 30px 0;
+}
+
+.price1 {
+    font-family: "Fraunces", sans-serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.price2 {
+    margin: 0 20px;
+    text-decoration: line-through;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: "Montserrat" , sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+button img {
+    margin-right: 15px;
+}
+
+button:hover {
+    background-color: hsl(157, 34%, 17%) ;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    bottom: -50px;
+}
+
+
+
+
+
+
+
