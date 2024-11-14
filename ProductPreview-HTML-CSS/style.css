@@ -45,7 +45,7 @@ p {
 .hero {
     margin: 150px auto;
     background-color: white;
-    width: 600px;
+    max-width: 600px;
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -114,6 +114,37 @@ footer {
     bottom: -50px;
 }
 
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: 650px;
+        max-width: 355px;
+        margin: 50px auto;
+    }
+
+    .hero-image {
+        background-image: url("assets/images/image-product-mobile.jpg");
+        height: 40%;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .hero-content {
+        height: 60%;
+        width: 100%;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .hero {
+        height: 700px;
+    }
+}
 
 
 
