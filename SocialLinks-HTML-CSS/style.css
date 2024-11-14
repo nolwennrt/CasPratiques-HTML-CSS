@@ -63,3 +63,8 @@ footer {
     text-align: center;
     margin-bottom: 20px;
 }
+
+.bouton:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+}
