@@ -27,6 +27,7 @@ main {
     margin: 90px auto;
     padding: 30px;
     border-radius: 20px;
+    box-shadow: 15px 10px 40px 10px hsl(217, 53%, 8%), -15px -10px 40px 10px hsl(217, 53%, 8%);
 }
 
 .image {
