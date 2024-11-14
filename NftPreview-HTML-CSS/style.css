@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Outfit";
+    src: url(assets/fonts/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit" , sans-serif;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    margin: 0;
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    width: 25%;
+    height: fit-content;
+    margin: 90px auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.image {
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.equi {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Ajout de l'effet au survol. NB : Le container doit absolument être positionné */
+
+.image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(178, 100%, 50%, 0.5); 
+    background-image: url(assets/images/icon-view.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.image:hover::after {
+    opacity: 1; 
+}
+
+h1 {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: white;
+}
+
+h1:hover {
+    color: hsl(178, 100%, 50%) ;
+    cursor: pointer;
+}
+
+/* Mise en forme de la partie data */
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.eth {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.eth img,
+.time img {
+    margin-right: 0.5em;
+}
+
+hr {
+    border: 0.5px solid hsl(215, 32%, 27%);
+}
+
+/* Mise en forme de la partie credits */
+
+.credits {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.credits img {
+    width: 2em;
+    border: 1px solid white;
+    border-radius: 999px;
+    margin-right: 1em;
+}
+
+.credits span {
+    color: white;
+}
+
+.credits span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.attribution {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
