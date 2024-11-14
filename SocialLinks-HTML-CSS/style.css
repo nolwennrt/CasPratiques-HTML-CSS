@@ -64,7 +64,17 @@ footer {
     margin-bottom: 20px;
 }
 
+/* Animation au survol des liens */
+
 .bouton:hover {
     background-color: hsl(75, 94%, 57%);
     color: hsl(0, 0%, 12%);
+}
+
+/* Responsive petits écrans */
+
+@media screen and (max-width: 400px) {
+    .info-section {
+        padding: 30px 40px 0 40px;
+    }
 }
