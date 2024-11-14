@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Inter";
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+    font-family: "Inter" , sans-serif;
+    font-size: 14px;
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+}
+
+main {
+    background-color: hsl(0, 0%, 12%);
+    margin: 90px auto;
+    width: fit-content;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-section {
+    padding: 40px 60px 0 60px;
+}
+
+img {
+    border-radius: 999px;
+    width: 80px;
+}
+
+h1 {
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 12px;
+    margin-bottom: 30px;
+    color: hsl(75, 94%, 57%);
+}
+
+.link {
+    width: 80%;
+    padding-bottom: 40px;
+}
+
+.bouton {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 7px ;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
