@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Lexend";
+    src: url(assets/fonts/LexendDeca-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "BigShoulders";
+    src: url(assets/fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style globaux */
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+main {
+    width: 80%;
+    max-width: 60em;
+    margin: 10em auto;
+    display: flex;
+    border-radius: 10px;
+}
+
+.category {
+    padding: 3rem;
+}
+
+.category img {
+    margin-bottom: 2rem;
+}
+
+.category p {
+    margin-bottom: 5rem;
+    line-height: 1.5rem;
+}
+
+button {
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    height: 3rem;
+    width: 9.5rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+h2 {
+    font-family: "BigShoulders", sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 2rem;
+}
+
+/* Style par catégorie */
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.sedans button {
+    color: hsl(31, 77%, 52%) ;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+/* Animation du bouton */
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%) ;
+    color: hsl(0, 0%, 95%);
+}
+
+.attribution {
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(120, 120, 120);
+}
