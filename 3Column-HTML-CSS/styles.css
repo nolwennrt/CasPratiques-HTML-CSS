@@ -109,3 +109,26 @@ button:hover {
     margin-bottom: 10px;
     color: rgb(120, 120, 120);
 }
+
+/* Responsive */
+
+@media screen and (min-width: 780px) and (max-width: 1000px) {
+    main {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width : 779px) {
+    main {
+        flex-direction: column;
+        margin-top: 5em;
+    }
+
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+}
