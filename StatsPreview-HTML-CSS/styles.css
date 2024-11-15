@@ -23,15 +23,18 @@ body {
 
 main {
     margin: 10em auto;
-    width: 70%;
+    width: 90%;
+    max-width: 70em;
     background-color: hsl(244, 38%, 16%);
     display: flex;
     border-radius: 10px;
 }
 
+/* Partie text de la card */
+
 .card-content {
     width: 50%;
-    padding: 4em 7em 4em 4em;
+    padding: 4em 6em 4em 4em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -56,6 +59,7 @@ h1 span {
     justify-content: space-between;
     line-height: 25px;
     padding-right: 2em;
+    margin-top: 30px;
 }
 
 .data p {
@@ -72,6 +76,7 @@ h1 span {
     letter-spacing: 1px;
 }
 
+/* Partie image */
 
 .card-image {
     width: 50%;
@@ -80,9 +85,13 @@ h1 span {
 
 .responsive {
     width: 100%;
+    height: 100%;
     display: block;
     border-radius: 0 10px 10px 0;
+    object-fit: cover;
 }
+
+/* Ajout du filtre violet sur l'image */
 
 .card-image::after {
     content: '';
@@ -100,4 +109,66 @@ h1 span {
     width: 100%;
     position: absolute;
     bottom: 10px;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 800px) and (max-width: 920px) {
+    .card-content {
+        padding: 3em 3em 3em 3em;
+    }
+}
+    
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .card-image {
+        order: 1;
+        height: 50%;
+        width: 100%;
+    }
+
+    .responsive {
+        border-radius: 10px 10px 0 0;
+        content: url(assets/images/image-header-desktop.jpg);
+    }
+
+    .card-image::after {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-content {
+        order: 2;
+        height: 50%;
+        width: 100%;
+        text-align: center;
+        padding: 2em 3.5em;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .card-content p {
+        margin-bottom: 10px;
+    }
+
+    .data {
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 0;
+        margin-top: 0;
+    }
+
+    .data p {
+        margin-top: 20px;
+    }
+
+    .attribution {
+        display: none;
+    }
 }
