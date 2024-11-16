@@ -78,8 +78,6 @@ p {
     color: white;
 }
 
-
-
 .price-content {
     display: flex;
     align-items: center;
@@ -109,4 +107,50 @@ button {
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 2px 10px 10px hsla(179, 61%, 27%, 0.412);
+}
+
+@media screen and (min-width: 426px) and (max-width : 767px) {
+    main {
+        margin: 3rem auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .join {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .price {
+        border-radius: 0;
+    }
+
+    .about {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media screen and (max-width : 425px) {
+    main {
+        margin: 3rem auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 30% 30%;
+    }
+
+    .join {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .price {
+        border-radius: 0;
+    }
+
+    .about {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+footer {
+    text-align: center;
 }
