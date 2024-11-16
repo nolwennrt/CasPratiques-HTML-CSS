@@ -59,8 +59,10 @@ h1 {
 .rated {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: hsl(300, 24%, 96%);
     height: 3.4rem;
+    width: 100%;
     max-width: 28rem;
     padding-left: 2rem;
     padding-right: 3rem;
@@ -68,14 +70,10 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.rated img {
-    margin-right: 0.5rem;
-}
-
 .rated p {
     font-weight: 700;
     color: hsl(300, 43%, 22%);
-    padding-left: 1.5rem;
+    margin-left: 1.5em;
 }
 
 /* Décalage des notes */
@@ -160,5 +158,92 @@ h1 {
 
 .attribution {
     text-align: center;
+}
+
+/* Partie responsive */
+
+@media screen and (min-width: 769px) and (max-width: 895px) { /* Leger bug entre ces deux valeurs, du à un dépassement de la partie rated */
+    .rated {
+        padding-left: 0.5rem;
+        padding-right: 1rem;
+    }
+
+    .rated p {
+        margin-left: 0.5rem;
+    }
+}
+
+/* Responsive mobile et tablette */
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url(assets/images/bg-pattern-top-mobile.svg), url(assets/images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: 0 0, 100% 100%;
+    }
+    
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        padding: 1rem;
+        margin-top: 3rem;
+    }
+
+    h1 {
+        font-size: 2.9rem;
+    }
+
+    .text {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: 0;
+        text-align: center;
+    }
+
+    .rate {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .rated {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        height: 4.5rem;
+    }
+
+    .rated p {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .rated:nth-child(1) {
+        position: relative;
+        right: 0;
+    }
+    
+    .rated:nth-child(2) {
+        position: relative;
+        right: 0;
+    }
+
+    .review {
+        flex-direction: column;
+    }
+
+    .review-content {
+        width: 100%;
+    }
+
+    .review-content:nth-child(2) {
+        margin-left: 0;
+    }
+    
+    .review-content:nth-child(3) {
+        margin-left: 0;
+    }
 }
 
