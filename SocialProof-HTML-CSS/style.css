@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "League";
+    src: url(assets/fonts/LeagueSpartan-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    background-image: url(assets/images/bg-pattern-top-desktop.svg), url(assets/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    height: 100vh;
+}
+
+main {
+    width: 80%;
+    max-width: 70rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-family: "League",sans-serif;
+    font-size: 17px;
+    color: hsl(300, 14%, 56%);
+}
+
+p {
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.text {
+    padding-right: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: hsl(300, 43%, 22%);
+    margin-bottom: 1.5rem;
+}
+
+/* Partie note */
+
+.rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.rated {
+    display: flex;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+    height: 3.4rem;
+    width: 28rem;
+    padding-left: 2rem;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+}
+
+.rated img {
+    margin-right: 0.5rem;
+}
+
+.rated p {
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    padding-left: 1.5rem;
+}
+
+/* Décalage des notes */
+
+.rated:nth-child(1) {
+    position: relative;
+    right: 6rem;
+}
+
+.rated:nth-child(2) {
+    position: relative;
+    right: 3rem;
+}
+
+.rated:nth-child(3) {
+    margin-bottom: 0;
+}
+
+/* Partie avis */
+
+.review {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+.review-content {
+    background-color: hsl(300, 43%, 22%);
+    padding: 2rem;
+    width: 22rem;
+    border-radius: 7px;
+}
+
+.review-content p {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+/* Partie photo et nom de l'acheteur  */
+
+.buyer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.buyer img {
+    border-radius: 9999px;
+    height: 3rem;
+    margin-right: 1.5rem;
+}
+
+.buyer p {
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.buyer span {
+    font-weight: 500;
+    color: hsl(333, 80%, 67%);
+}
+
+/* Décalage des avis */
+
+.review-content:nth-child(2) {
+    position: relative;
+    top: 1rem;
+}
+
+.review-content:nth-child(3) {
+    position: relative;
+    top: 2rem;
+}
+
+
+.attribution {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translate(-50%);
+}
