@@ -78,6 +78,11 @@ button {
     box-shadow: 0 0 20px hsl(256, 40%, 22%) ;
 }
 
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -99,7 +104,15 @@ footer {
     align-items: center;
 }
 
+.icon div:hover {
+    border: 1px solid hsl(300, 75%, 48%);
+    color: hsl(300, 75%, 48%);
+}
+
 i {
     font-size: 20px;
 }
 
+.attribution {
+    font-size: 13px;
+}
