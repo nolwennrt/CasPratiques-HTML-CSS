@@ -24,7 +24,7 @@ body {
     background-image: url(assets/images/bg-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
     font-family: "OpenSans" ,sans-serif;
     font-size: 18px;
     color: rgba(255, 255, 255, 0.848);
@@ -57,12 +57,14 @@ p {
 }
 
 main img {
-    width: 60%;
+    width: 100%;
+    min-width: 60%;
     margin-right: 2rem;
 }
 
 main div {
-    width: 40%;
+    width: 100%;
+    min-width: 30%;
 }
 
 button {
@@ -86,6 +88,7 @@ button:hover {
 footer {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 1rem;
 }
 
 .icon {
@@ -95,13 +98,16 @@ footer {
 .icon div {
     border: 1px solid white;
     padding: 1.1rem;
-    margin-left: 1rem;
     border-radius: 999px;
     width: 2rem;
     height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.icon div:not(:nth-child(1)) {
+    margin-left: 1rem;
 }
 
 .icon div:hover {
@@ -115,4 +121,63 @@ i {
 
 .attribution {
     font-size: 13px;
+}
+
+@media screen and (max-width: 1023px) {
+    body {
+        background-image: url(assets/images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    main img {
+        margin: 0;
+        width: 80%;
+    }
+
+    main div {
+        width: 70%;
+    }
+
+    .attribution {
+        display: none;
+    }
+
+    footer {
+        justify-content: center;
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    body {
+        padding: 2rem;
+    }
+    header img {
+        height: 2.5rem;
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    main div {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+    
+    button {
+        width: 15rem;
+    }
 }
