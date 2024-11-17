@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(assets/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "PoppinsR";
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(assets/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 4rem;
+    font-family: "OpenSans" ,sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.848);
+    height: 100vh;
+}
+
+header img {
+    height: 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: "Poppins";
+    color: white;
+}
+
+p {
+    line-height: 2rem;
+}
+
+main img {
+    width: 60%;
+    margin-right: 2rem;
+}
+
+main div {
+    width: 40%;
+}
+
+button {
+    font-family: "PoppinsR", sans-serif;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    width: 11rem;
+    height: 3rem;
+    margin-top: 1.8rem;
+    border-radius: 30px;
+    box-shadow: 0 0 20px hsl(256, 40%, 22%) ;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    display: flex;
+}
+
+.icon div {
+    border: 1px solid white;
+    padding: 1.1rem;
+    margin-left: 1rem;
+    border-radius: 999px;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    font-size: 20px;
+}
+
